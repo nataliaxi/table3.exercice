@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Javascript Multiplication Table</title>
+        <meta charset="UTF-8">
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            document.write("<table class='table-striped'>")
+            var x;
+            var y;
+ 
+            var x=prompt("Ver la tabla de multiplicar del número:")
+ 
+            var x = parseInt(x);
+ 
+            if(x>=1 && x<=9 && x!=NaN){
+ 
+            document.write("<th> Tabla del "+ x + "</th>");
+ 
+                  }else{
+                              alert("Valor introducido no válido.");
+                  }
+ 
+            for (var y=1; y <= 9; y++){
+              document.write("<tr>")
+ 
+                          document.write("<td>" + x + "X" + y + "=" + "</td>" + "<td>" + (x*y) + "</td><br>");
+             
+              document.write("</tr>");
+            }
+            document.write("</table>")
+        </script>
+    </body>
+</html>
